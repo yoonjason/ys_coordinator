@@ -6,6 +6,5 @@ final class ys_coordinatorTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(ys_coordinator().text, "Hello, World!")
     }
 }

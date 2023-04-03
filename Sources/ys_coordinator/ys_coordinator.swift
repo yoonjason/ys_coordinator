@@ -1,6 +1,10 @@
-public struct ys_coordinator {
-    public private(set) var text = "Hello, World!"
+public protocol Coordinator: AnyObject {
+    func start()
+    func coordinate(to coordinator: Coordinator)
+}
 
-    public init() {
+extension Coordinator {
+    func coordinate(to coordinator: Coordinator) {
+        coordinator.start()
     }
 }
